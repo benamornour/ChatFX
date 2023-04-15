@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SigninController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="400.0" styleClass="left-side-background" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="211.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/logo_removedbg.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Pane prefHeight="154.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="62.0" text="Welcome to ChatFX !" textFill="#fffefe">
+                     <font>
+                        <Font name="Arial" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnLoginPage" mnemonicParsing="false" prefHeight="55.0" prefWidth="221.0" styleClass="btn" stylesheets="@style.css" text="Login">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="62.0" prefWidth="400.0" VBox.vgrow="ALWAYS" />
+            <Pane layoutX="10.0" layoutY="307.0" prefHeight="76.0" prefWidth="400.0" stylesheets="@../../../eclipse-workspace/NewProject/src/values/Style.css" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox fx:id="rightbox" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;">
+         <children>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="62.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="btnClose" mnemonicParsing="false" prefHeight="35.0" prefWidth="37.0" styleClass="transparent" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/80-805814_x-button-svg-png-red-x-circle-icon-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Pane prefHeight="0.0" prefWidth="400.0" VBox.vgrow="ALWAYS" />
+            <HBox prefHeight="46.0" prefWidth="400.0" styleClass="border" stylesheets="@style.css">
+               <children>
+                  <Pane prefHeight="46.0" prefWidth="48.0" styleClass="right-side-border" stylesheets="@../../../eclipse-workspace/NewProject/src/values/Style.css">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/login%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="tfUsername" prefHeight="46.0" prefWidth="247.0" promptText="Username" styleClass="transparent" stylesheets="@style.css">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="247.0" styleClass="border" stylesheets="@style.css">
+               <children>
+                  <Pane prefHeight="46.0" prefWidth="48.0" styleClass="right-side-border" stylesheets="@../../../eclipse-workspace/NewProject/src/values/Style.css">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/email.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="tfEmail" prefHeight="52.0" prefWidth="247.0" promptText="Email" styleClass="transparent" stylesheets="@style.css">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="400.0" styleClass="border" stylesheets="@style.css">
+               <children>
+                  <Pane prefHeight="46.0" prefWidth="48.0" styleClass="right-side-border" stylesheets="@../../../eclipse-workspace/NewProject/src/values/Style.css">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/padlock.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <PasswordField fx:id="pfPassword" prefHeight="43.0" prefWidth="213.0" promptText="******" styleClass="transparent" stylesheets="@style.css">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </PasswordField>
+                  <ImageView fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/hide.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="btnSignin" mnemonicParsing="false" prefHeight="48.0" prefWidth="300.0" styleClass="left-side-background" stylesheets="@style.css" text="Sign-in" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="57.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="btnLoginPage2" layoutX="50.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="300.0" styleClass="transparent" stylesheets="@style.css" text="Already have an account ? Login" textFill="#6accdd">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>
