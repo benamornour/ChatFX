@@ -1,0 +1,49 @@
+
+.left-side-background{
+	-fx-background-color : #6ACCDD;
+}
+
+.transparent {
+	-fx-background-color : rgba(0,0,0,0);
+}
+
+.border {
+	-fx-border-color : #6ACCDD;
+	-fx-border-width : 1.5;
+}
+
+.right-side-border{
+	-fx-border-color : #6ACCDD;
+	-fx-border-width : 0 1.5 0 0;
+}
+
+.btn {
+	-fx-background-color : transparent;
+	-fx-background-radius : 5px;
+	-fx-border-color : white;
+	-fx-border-radius : 5px;
+	-fx-border-width : 1px;
+	-fx-text-fill: whitesmoke;
+}
+
+.white-background-color {
+
+-fx-background-color : whitesmoke;
+}
+
+.light-background-color {
+-fx-background-color : #6ACCDD6E;
+}
+
+.radius {
+-fx-background-radius : 100px;
+}
+
+.text{
+-fx-text-fill : whitesmoke;
+}
+
+
+.light-background{
+-fx-background-color : #6ACCDD1C;
+}
