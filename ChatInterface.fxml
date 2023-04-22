@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="1006.0" styleClass="light-background-color" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientServer.ChatroomController">
+   <left>
+      <HBox prefHeight="702.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="92.0" styleClass="left-side-background" stylesheets="@style.css">
+               <children>
+                  <Pane prefHeight="330.0" prefWidth="92.0">
+                     <children>
+                        <ImageView fitHeight="69.0" fitWidth="68.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logo_removedbg.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="92.0">
+                     <children>
+                        <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="28.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnProfile" layoutX="15.0" layoutY="5.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="58.0" styleClass="transparent" stylesheets="@style.css" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="92.0">
+                     <children>
+                        <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bubble-chat.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnGroupChat" layoutX="14.0" layoutY="8.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="65.0" styleClass="transparent" stylesheets="@style.css" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="92.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="31.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@messenger.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnMessages" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="65.0" styleClass="transparent" stylesheets="@style.css" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="92.0">
+                     <children>
+                        <Button layoutX="15.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="63.0" styleClass="transparent" stylesheets="@style.css" />
+                        <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="26.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@download-file.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="92.0" />
+                  <Pane prefHeight="200.0" prefWidth="92.0" />
+                  <Pane prefHeight="200.0" prefWidth="92.0" />
+                  <Pane prefHeight="200.0" prefWidth="92.0">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="25.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logout.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnLogOut" layoutX="7.0" layoutY="3.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="72.0" styleClass="transparent" stylesheets="@style.css" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="702.0" prefWidth="343.0" styleClass="light-background-color" stylesheets="@style.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="271.0" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="26.0" fitWidth="31.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@zoom.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="Search" prefHeight="31.0" prefWidth="207.0" promptText="Search" style="-fx-font-style: white;" styleClass="transparent" stylesheets="@style.css" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="left-side-background" />
+                        <String fx:value="radius" />
+                     </styleClass>
+                  </HBox>
+                  <Pane prefHeight="2.0" prefWidth="343.0" styleClass="left-side-background" stylesheets="@style.css" />
+                  <Pane prefHeight="100.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="102.0" prefWidth="343.0">
+                           <children>
+                              <HBox prefHeight="77.0" prefWidth="343.0">
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <ButtonBar>
+                                             <buttons>
+                                                <Pane prefHeight="81.0" prefWidth="92.0">
+                                                   <children>
+                                                      <Circle fill="#fafcff" layoutX="48.0" layoutY="49.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+                                                      <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@Images/Profiles/groom_friend4.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </Pane>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="215.0">
+                                                   <children>
+                                                      <Label text="Sarah A." textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Arial Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label prefHeight="20.0" prefWidth="228.0" text="Wow, great !" textFill="#646868c2">
+                                                         <font>
+                                                            <Font name="Arial Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                                <Pane prefHeight="76.0" prefWidth="26.0">
+                                                   <children>
+                                                      <Circle fill="#6addb5" layoutX="17.0" layoutY="51.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+                                                      <Label fx:id="notification" layoutX="11.0" layoutY="38.0" prefHeight="26.0" prefWidth="13.0" text="1" textFill="WHITE" />
+                                                   </children>
+                                                </Pane>
+                                             </buttons>
+                                          </ButtonBar>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="82.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="142.0" text="Sarah A." textFill="#646868">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Circle fill="#6addb5" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label alignment="CENTER" prefHeight="14.0" prefWidth="70.0" text="Online" textFill="#646868">
+                     <font>
+                        <Font name="Arial Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="138.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@80-805814_x-button-svg-png-red-x-circle-icon-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnExit" layoutX="145.0" layoutY="12.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="55.0" prefWidth="30.0" styleClass="transparent" stylesheets="@style.css" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <ScrollPane fx:id="sp_main" prefHeight="549.0" prefWidth="571.0" styleClass="transparent" stylesheets="@style.css">
+               <content>
+                  <VBox fx:id="vbox_messages" prefHeight="530.0" prefWidth="579.0" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="70.0" prefWidth="118.0">
+                     <children>
+                        <Button fx:id="btnAttach" layoutX="60.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="33.0" styleClass="transparent" stylesheets="@style.css" />
+                        <Button fx:id="btnEmoji" layoutX="12.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="33.0" styleClass="transparent" stylesheets="@style.css">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Button>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="13.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@smile.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="59.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@attachment.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="tf_messages" prefHeight="59.0" prefWidth="419.0" promptText="Type a message to send.." styleClass="transparent" stylesheets="@style.css">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Pane prefHeight="70.0" prefWidth="45.0">
+                     <children>
+                        <Button fx:id="btnSendMsg" layoutX="-4.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="48.0" styleClass="transparent" stylesheets="@style.css">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Button>
+                        <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="2.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@send.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
